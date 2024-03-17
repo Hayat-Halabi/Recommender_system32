@@ -174,10 +174,19 @@ user_util_matrix = util_mat.copy()
 # This step is necessary for calculating Pearson correlation, and it assumes average ratings for unrated movies.
 user_util_matrix = user_util_matrix.apply(lambda row: row.fillna(row.mean()), axis=1)
 user_util_matrix.head(5)
+user_util_matrix.T
+user_util_matrix = util_mat.copy()
 
+# Filling the NaN values in the utility matrix rows with the corresponding user's mean ratings.
+# This step is necessary for calculating Pearson correlation, and it assumes average ratings for unrated movies.
+user_util_matrix = user_util_matrix.apply(lambda row: row.fillna(row.mean()), axis=1)
 
+# Displaying the first 5 rows of the modified utility matrix.
+user_util_matrix.head(5)
 
-
+# Transposing the user_util_matrix to get movies as rows and users as columns,
+# then calculating the Pearson correlation matrix between movies.
+user_util_matrix.T.corr()
 
 ```
 Links to access data
