@@ -1,2 +1,30 @@
 # Recommender_system32
-draft
+Recommender systems ws32
+``` python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+Link to access data
+```
+
+```
