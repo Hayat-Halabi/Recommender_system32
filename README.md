@@ -1,7 +1,32 @@
 # Recommender_system32
 Recommender systems ws32
 ``` python
+# Ignore warnings
+import warnings
+warnings.filterwarnings('ignore')
 
+# Import necessary libraries
+import numpy as np  # For numerical operations
+import pandas as pd  # For data manipulation
+import math  # For mathematical functions
+import itertools  # For creating iterators for efficient looping
+
+# Import modeling helpers
+from sklearn.preprocessing import Normalizer, scale  # For data preprocessing
+from sklearn.model_selection import train_test_split  # For splitting data into training and testing sets
+from sklearn.metrics import confusion_matrix  # For evaluating classification results
+from sklearn.model_selection import GridSearchCV, KFold, cross_val_score  # For hyperparameter tuning and cross-validation
+
+# Import evaluation metrics for regression
+from sklearn.metrics import mean_squared_log_error, mean_squared_error, r2_score, mean_absolute_error
+
+# Import evaluation metrics for classification
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+# Import visualization libraries
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 
